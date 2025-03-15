@@ -23,22 +23,22 @@ function Work() {
     
 
     scrollYProgress.on("change", (data) => {
-        const progress = Math.floor(data * 100); // স্ক্রল % হিসেবে ক্যালকুলেট
+        const progress = Math.floor(data * 100);
     
         if (progress === 0) {
-            imageShow([]); // স্ক্রলের একদম শুরুতে সব ইমেজ লুকানো
+            imageShow([]);
         } else if (progress === 1) {
-            imageShow([0]); // ১% স্ক্রলে ১ম ইমেজ দেখাও
+            imageShow([0]);
         } else if (progress === 2) {
-            imageShow([0, 1]); // ২% স্ক্রলে ১ম ও ২য় ইমেজ দেখাও
+            imageShow([0, 1]); //
         } else if (progress === 3) {
-            imageShow([0, 1, 2]); // ৩% স্ক্রলে ৩টি ইমেজ দেখাও
+            imageShow([0, 1, 2]); //
         } else if (progress === 4) {
-            imageShow([0, 1, 2, 3]); // ৪% স্ক্রলে ৪টি ইমেজ দেখাও
+            imageShow([0, 1, 2, 3]);
         } else if (progress === 6) {
-            imageShow([0, 1, 2, 3, 4]); // ৬% স্ক্রলে ৫টি ইমেজ দেখাও
+            imageShow([0, 1, 2, 3, 4]);
         } else if (progress === 8) {
-            imageShow([0, 1, 2, 3, 4, 5]); // ৮% স্ক্রলে সব ইমেজ দেখাও
+            imageShow([0, 1, 2, 3, 4, 5]);
         }
     });
 
